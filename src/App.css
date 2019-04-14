@@ -1,0 +1,20 @@
+.float-right {
+  cursor: pointer;
+}
+
+.float-right:hover {
+  color: red;
+}
+
+.dropdown-menu .fa::before{
+  padding-right: 3rem;
+}
+
+.sort_selected::after {
+  content: '\f00c';
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0px 0px 0px 10px;
+  display: inline-block;
+}
