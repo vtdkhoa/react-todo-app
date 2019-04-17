@@ -2,7 +2,7 @@ import * as types from './../constants/ActionsTypes';
 import { generateID, findIndex } from '../functions/index';
 
 let data = JSON.parse(localStorage.getItem('tasks'));
-const initialState = data ? data : [];
+let initialState = data ? data : [];
 
 /* jshint ignore:start */
 /**
