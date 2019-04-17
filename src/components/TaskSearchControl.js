@@ -13,8 +13,8 @@ class TaskSearchControl extends Component {
 
   // TODO: record all events in search field
   recordEvents = (event) => {
-    const name = event.target.name;
-    const value = event.target.value;
+    let name = event.target.name;
+    let value = event.target.value;
     this.setState({
       // NOTE: Multi inputs
       [name]: value
