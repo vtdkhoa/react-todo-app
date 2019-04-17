@@ -24,24 +24,24 @@ class TaskSortControl extends Component {
         <div className="dropdown-menu" aria-labelledby="dropdownMenu">
           <a className="dropdown-item" role="button" onClick={() => this.sortTask('name', 1)}>
             <i className="fa fa-sort-alpha-asc"></i>
-            <span className={(sort.by === 'name' && sort.value === 1) ? 'sort_selected' : '' }>
+            <span className={(sort.by === 'name' && sort.value === 1) ? 'sort_selected' : ''}>
               A-Z
             </span>
           </a>
           <a className="dropdown-item" role="button" onClick={() => this.sortTask('name', -1)}>
             <i className="fa fa-sort-alpha-desc"></i>
-            <span className={(sort.by === 'name' && sort.value === -1) ? 'sort_selected' : '' }>
+            <span className={(sort.by === 'name' && sort.value === -1) ? 'sort_selected' : ''}>
               Z-A
             </span>
           </a>
           <div className="dropdown-divider"></div>
           <a className="dropdown-item" role="button" onClick={() => this.sortTask('status', 1)}>
             Status: <span className="badge badge-success">Enable</span>
-            <span className={(sort.by === 'status' && sort.value === 1) ? 'sort_selected' : '' }></span>
+            <span className={(sort.by === 'status' && sort.value === 1) ? 'sort_selected' : ''}></span>
           </a>
           <a className="dropdown-item" role="button" onClick={() => this.sortTask('status', -1)}>
             Status: <span className="badge badge-danger">Disable</span>
-            <span className={(sort.by === 'status' && sort.value === -1) ? 'sort_selected' : '' }></span>
+            <span className={(sort.by === 'status' && sort.value === -1) ? 'sort_selected' : ''}></span>
           </a>
         </div>
       </div>
