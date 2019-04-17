@@ -34,7 +34,7 @@ class TaskList extends Component {
     // TODO: filter name
     if(filterTable.name) {
       tasks = tasks.filter(task => {
-        // NOTE: include lower case words
+        // NOTE: include lower case
         return task.name.toLowerCase().indexOf(filterTable.name.toLowerCase()) !== -1 ;
       });
     }
