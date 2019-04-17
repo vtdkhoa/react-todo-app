@@ -57,7 +57,7 @@ class TaskForm extends Component {
 
   // TODO: record all events inside add form
   recordEvents = (event) => {
-    const name = event.target.name;
+    let name = event.target.name;
     let value = event.target.value;
     if(name === 'status') {
       value = event.target.value === 'true' ? true : false;
